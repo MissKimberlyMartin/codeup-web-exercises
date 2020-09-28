@@ -56,7 +56,7 @@
 </div>
 
 
-<script>
+	<script>
 	/* **************************************
 		      THIS IS AN INLINE EXAMPLE
 	 ****************************************/
@@ -65,15 +65,15 @@
 
 	//TODO: Console.log "Hello from inline javascript"
 
-	console.log("Hello from inline javascript");
-	console.log("This is another inline JS log");
+	// console.log("Hello from inline javascript");
+	// console.log("This is another inline JS log");
 
 
 </script>
 
 <!--TODO: ADD EXTERNAL JS-->
 
-<script src="JS%20test/external-js.js"></script>
+//	<script src="JS%20test/external-js.js"></script>
 
 <script>
 	// This is for the user interactions
@@ -85,13 +85,13 @@
 	* *******************************/
 
 
-	//TODO TOGETHER: Write an alert ---> alert("Message goes here.");
-
-	alert("You have been alerted");
-
-	//TODO: Write an alert with an alert message
-
-
+	// //TODO TOGETHER: Write an alert ---> alert("Message goes here.");
+	//
+	// alert("You have been alerted");
+	//
+	// //TODO: Write an alert with an alert message
+	//
+	// alert("Are are being alerted again");
 
 	/*  *******************************
 					Confirm
@@ -101,7 +101,12 @@
 	//TODO TOGETHER: Write a confirm interaction and console.log the result
 
 
+	var userConfirm = confirm("Are you sure?");
+	console.log((userConfirm));
+	alert("The user selected: " + userConfirm);
+
 	// TODO: Select the OK option. View the result. Select the cancel option. View the result.
+
 
 
 	/*******************************
@@ -109,14 +114,20 @@
 	 ******************************/
 	// TODO TOGETHER: Write a prompt interaction. Console.log the result
 
+	var userPrompt = prompt("What is your favorite animal?");
+	console.log(userPrompt);
+	console.log(typeof userPrompt);
+
+	var userNumber = Number(prompt("What is your favorite number?"));
+	console.log(userNumber);
+	console.log(typeof userNumber);
 
 
 	// TODO: Write an additional prompt. Console.log the result
 
-
-
-
-
+	var userColor = prompt("What is your favorite color?");
+	console.log(userColor);
+	console.log(typeof userColor);
 
 
 </script>
