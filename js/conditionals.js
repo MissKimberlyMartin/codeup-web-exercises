@@ -49,7 +49,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-console.log(analyzeColor(randomColor));
+// console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
@@ -66,11 +66,11 @@ function analyzeColor(color)    {
         return "I don't know anything about " + color;
     }
 }
-
-console.log(analyzeColor("blue"));
-console.log(analyzeColor("red"));
-console.log(analyzeColor("cyan"));
-console.log(analyzeColor("purple"));
+//
+// console.log(analyzeColor("blue"));
+// console.log(analyzeColor("red"));
+// console.log(analyzeColor("cyan"));
+// console.log(analyzeColor("purple"));
 
 /**
  * TODO:
@@ -78,6 +78,10 @@ console.log(analyzeColor("purple"));
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+var userColor = prompt("Enter a color:");
+
+alert(analyzeColor(userColor));
 
 
 
@@ -102,6 +106,32 @@ console.log(analyzeColor("purple"));
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
+function calculateTotal(luckyNumber, totalAmount)    {
+    // return total after discount
+    // 0/0 1/10 2/25 3/35 4/50 5/free
+    switch (luckyNumber)    {
+        case 0:
+            return totalAmount;
+        case 1:
+            return totalAmount * ;
+        case 2:
+            return totalAmount;
+        case 3:
+            return totalAmount;
+        case 4:
+            return totalAmount;
+        case 5:
+            return totalAmount;
+        default:
+            return totalAmount;
+    }
+
+}
+
+calculateTotal(0, 100); // returns 100
+calculateTotal(4, 100); // returns 50
+calculateTotal(5, 100); // returns 0
 
 /**
  * TODO:
