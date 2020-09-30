@@ -112,19 +112,19 @@ function calculateTotal(luckyNumber, totalAmount)    {
     // 0/0 1/10 2/25 3/35 4/50 5/free
     switch (luckyNumber)    {
         case 0:
-            return totalAmount;
+            return "Sorry, you are not a winner.  You total is: $" + totalAmount;
         case 1:
-            return totalAmount * ;
+            return "Congratulation! You won a 10% off discount!  Your discounted total is: $" + totalAmount * .9;
         case 2:
-            return totalAmount;
+            return "Congratulation! You won a 25% off discount!  Your discounted total is: $" + totalAmount * .75;
         case 3:
-            return totalAmount;
+            return "Congratulation! You won a 35% off discount!  Your discounted total is: $" + totalAmoun * .65;
         case 4:
-            return totalAmount;
+            return "Congratulation! You won a 50% off discount!  Your discounted total is: $" + totalAmount * .5;
         case 5:
-            return totalAmount;
+            return "Congratulation! You are a grand prize winner!  Your order is FREE!";
         default:
-            return totalAmount;
+            return "Sorry, you are not a winner.  You total is: $" + totalAmount;
     }
 
 }
