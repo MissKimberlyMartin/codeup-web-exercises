@@ -120,7 +120,7 @@ function calculateTotal(luckyNumber, totalAmount)   {
         case 5:
             return 0;
         default:
-            return totalAmount;
+            return "Sorry, you are not a winner.  You total is: $" + totalAmount;
     }
 }
 
