@@ -2,86 +2,86 @@
 
 /* ########################################################################## */
 
-/**
- * TODO:
- * Create a function named `analyzeColor` that accepts a string that is a color
- * name as input. This function should return a message that related to that
- * color. Only worry about the colors defined below, if the color passed is not
- * one of the ones defined below, return a message that says so
- *
- * Example:
- *  > analyzeColor('blue') // returns "blue is the color of the sky"
- *  > analyzeColor('red') // returns "Strawberries are red"
- *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
- *
- * You should use an if-else-if-else block to return different messages.
- *
- * Test your function by passing various string literals to it and
- * console.logging the function's return value
- */
-
+// /**
+//  * TODO:
+//  * Create a function named `analyzeColor` that accepts a string that is a color
+//  * name as input. This function should return a message that related to that
+//  * color. Only worry about the colors defined below, if the color passed is not
+//  * one of the ones defined below, return a message that says so
+//  *
+//  * Example:
+//  *  > analyzeColor('blue') // returns "blue is the color of the sky"
+//  *  > analyzeColor('red') // returns "Strawberries are red"
+//  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
+//  *
+//  * You should use an if-else-if-else block to return different messages.
+//  *
+//  * Test your function by passing various string literals to it and
+//  * console.logging the function's return value
+//  */
+//
+// // function analyzeColor(color)    {
+// //     if (color === "blue")   {
+// //         return "blue is the color of the sky";
+// //     }   else if (color === "red")   {
+// //         return "Strawberries are red";
+// //     }   else    {
+// //         return "I don't know anything about " + color;
+// //     }
+// // }
+// //
+// // console.log(analyzeColor("blue"));
+// // console.log(analyzeColor("red"));
+// // console.log(analyzeColor("cyan"));
+// // console.log(analyzeColor("purple"));
+//
+//
+// // Don't change the next two lines!
+// // These lines create two variables for you:
+// // - `colors`: a list of the colors of the rainbow
+// // - `randomColor`: contains a single random color value from the list (this
+// //                  will contain a different color every time the page loads)
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// /**
+//  * TODO:
+//  * Pass the `randomColor` variable to your function and console.log the results.
+//  * You should see a different message every time you refresh the page
+//  */
+//
+// // console.log(analyzeColor(randomColor));
+//
+// /**
+//  * TODO:
+//  * Refactor your above function to use a switch-case statement
+//  */
+//
 // function analyzeColor(color)    {
-//     if (color === "blue")   {
+//     switch (color)   {
+//         case "blue":
 //         return "blue is the color of the sky";
-//     }   else if (color === "red")   {
+//         case "red":
 //         return "Strawberries are red";
-//     }   else    {
+//         default:
 //         return "I don't know anything about " + color;
 //     }
 // }
+// //
+// // console.log(analyzeColor("blue"));
+// // console.log(analyzeColor("red"));
+// // console.log(analyzeColor("cyan"));
+// // console.log(analyzeColor("purple"));
 //
-// console.log(analyzeColor("blue"));
-// console.log(analyzeColor("red"));
-// console.log(analyzeColor("cyan"));
-// console.log(analyzeColor("purple"));
-
-
-// Don't change the next two lines!
-// These lines create two variables for you:
-// - `colors`: a list of the colors of the rainbow
-// - `randomColor`: contains a single random color value from the list (this
-//                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
-/**
- * TODO:
- * Pass the `randomColor` variable to your function and console.log the results.
- * You should see a different message every time you refresh the page
- */
-
-// console.log(analyzeColor(randomColor));
-
-/**
- * TODO:
- * Refactor your above function to use a switch-case statement
- */
-
-function analyzeColor(color)    {
-    switch (color)   {
-        case "blue":
-        return "blue is the color of the sky";
-        case "red":
-        return "Strawberries are red";
-        default:
-        return "I don't know anything about " + color;
-    }
-}
+// /**
+//  * TODO:
+//  * Prompt the user for a color when the page loads, and pass the input from the
+//  * user to your `analyzeColor` function. Alert the return value from your
+//  * function to show it to the user.
+//  */
 //
-// console.log(analyzeColor("blue"));
-// console.log(analyzeColor("red"));
-// console.log(analyzeColor("cyan"));
-// console.log(analyzeColor("purple"));
-
-/**
- * TODO:
- * Prompt the user for a color when the page loads, and pass the input from the
- * user to your `analyzeColor` function. Alert the return value from your
- * function to show it to the user.
- */
-
-var userColor = prompt("Enter a color:");
-
-alert(analyzeColor(userColor));
+// var userColor = prompt("Enter a color:");
+//
+// alert(analyzeColor(userColor));
 
 
 
@@ -107,31 +107,29 @@ alert(analyzeColor(userColor));
  * return value.
  */
 
-function calculateTotal(luckyNumber, totalAmount)    {
-    // return total after discount
-    // 0/0 1/10 2/25 3/35 4/50 5/free
+function calculateTotal(luckyNumber, totalAmount)   {
     switch (luckyNumber)    {
-        case 0:
-            return "Sorry, you are not a winner.  You total is: $" + totalAmount;
         case 1:
-            return "Congratulation! You won a 10% off discount!  Your discounted total is: $" + totalAmount * .9;
+            return totalAmount * .9;
         case 2:
-            return "Congratulation! You won a 25% off discount!  Your discounted total is: $" + totalAmount * .75;
+            return totalAmount * .75;
         case 3:
-            return "Congratulation! You won a 35% off discount!  Your discounted total is: $" + totalAmoun * .65;
+            return totalAmount * .65;
         case 4:
-            return "Congratulation! You won a 50% off discount!  Your discounted total is: $" + totalAmount * .5;
+            return totalAmount * .5;
         case 5:
-            return "Congratulation! You are a grand prize winner!  Your order is FREE!";
+            return 0;
         default:
             return "Sorry, you are not a winner.  You total is: $" + totalAmount;
     }
-
 }
 
-calculateTotal(0, 100); // returns 100
-calculateTotal(4, 100); // returns 50
-calculateTotal(5, 100); // returns 0
+console.log(calculateTotal(0, 100)); // returns 100
+console.log(calculateTotal(1, 100)); // returns 90
+console.log(calculateTotal(2, 100)); // returns 75
+console.log(calculateTotal(3, 100)); // returns 65
+console.log(calculateTotal(4, 100)); // returns 50
+console.log(calculateTotal(5, 100)); // returns 0
 
 /**
  * TODO:
@@ -140,8 +138,17 @@ calculateTotal(5, 100); // returns 0
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var totalAmount = prompt("Enter your bill total");
+
+alert("Your lucky number is: " + luckyNumber);
+alert("Your total before discount: " + totalAmount);
+
+
+
 
 /**
  * TODO:
