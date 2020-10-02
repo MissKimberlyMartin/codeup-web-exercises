@@ -107,28 +107,21 @@
  * return value.
  */
 
-
-
-var luckyNum = 0;
-
-function calculateTotal(luckyNumber, totalAmount)    {
+function calculateTotal(luckyNumber, totalAmount)   {
     switch (luckyNumber)    {
-        case 0:
-            return "Sorry, you are not a winner.  Your total is: $" + totalAmount;
         case 1:
-            return "Congratulations!  You won a 10% discount!  Your discounted total is: $" + (totalAmount * .9);
+            return totalAmount * .9;
         case 2:
-            return  "Congratulations!  You won a 25% discount!  Your discounted total is: $" + (totalAmount * .75);
+            return totalAmount * .75;
         case 3:
-            return  "Congratulations!  You won a 35% discount!  Your discounted total is: $" + (totalAmount * .65);
+            return totalAmount * .65;
         case 4:
-            return  "Congratulations!  You won a 50% discount!  Your discounted total is: $" + (totalAmount * .5);
+            return totalAmount * .5;
         case 5:
-            return  "Congratulations!  You are a grand prize winner!  Your total is: $" + (totalAmount * 0);
+            return 0;
         default:
-            return "Sorry, you are not a winner.  Your total is: $" + totalAmount;
+            return totalAmount;
     }
-
 }
 
 console.log(calculateTotal(0, 100)); // returns 100
@@ -145,8 +138,17 @@ console.log(calculateTotal(5, 100)); // returns 0
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var totalAmount = prompt("Enter your bill total");
+
+alert("Your lucky number is: " + luckyNumber);
+alert("Your total before discount: " + totalAmount);
+
+
+
 
 /**
  * TODO:
