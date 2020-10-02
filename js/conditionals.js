@@ -107,6 +107,8 @@ alert(analyzeColor(userColor));
  * return value.
  */
 
+
+
 function calculateTotal(luckyNumber, totalAmount)    {
     // return total after discount
     // 0/0 1/10 2/25 3/35 4/50 5/free
