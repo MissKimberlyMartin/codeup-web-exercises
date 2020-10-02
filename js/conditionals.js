@@ -114,7 +114,7 @@ function calculateTotal(luckyNumber, totalAmount)    {
         case 0:
             return totalAmount;
         case 1:
-            return totalAmount * ;
+            return totalAmount;
         case 2:
             return totalAmount;
         case 3:
