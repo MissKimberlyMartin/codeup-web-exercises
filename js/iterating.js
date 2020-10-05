@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    var names = ["Max", "Trixie", "Darwin", "Phil"];
+    var names = ["Max", "Trixie", "Darwin", "Philip"];
 
     /**
      * TODO:
@@ -15,7 +15,7 @@
      * array.
      */
 
-    console.log(names.length);
+    // console.log(names.length);
 
     /**
      * TODO:
@@ -44,9 +44,9 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    // names.forEach(function (name){
-    //     console.log(name);
-    // })
+    names.forEach(function (name){
+        console.log(name);
+    })
 
     /**
      * TODO:
@@ -81,3 +81,6 @@
     console.log(last([1, 2, 3, 4, 5])) // return 5
 
 })();
+
+// EOD commit 5 OCT
+
