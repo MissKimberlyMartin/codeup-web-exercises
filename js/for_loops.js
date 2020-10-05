@@ -20,7 +20,7 @@
 // 199 is odd
 
 // for (var i = 0; i < 10; i++)    {
-//     var randomNumber = Math.floor((Math.random() * (200 - 20 + 1)) + 20);
+//     var randomNumber = Math.floor(Math.random() * 180) + 20;
 //
 //     if (randomNumber % 2 !== 0) {
 //         console.log(randomNumber + " is odd");
@@ -45,6 +45,34 @@
 
 // for (var i = 1; i < 10; i++)    {
 //     console.log(i.toString().repeat(i));
+// }
+
+
+// Create a for loop that uses console.log to create the output shown below.
+
+// 100
+// 95
+// 90
+// 85
+// 80
+// 75
+// 70
+// 65
+// 60
+// 55
+// 50
+// 45
+// 40
+// 35
+// 30
+// 25
+// 20
+// 15
+// 10
+// 5
+
+// for (var i = 100; i > 0; i -= 5)    {
+//     console.log(i);
 // }
 
 
