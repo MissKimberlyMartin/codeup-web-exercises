@@ -171,26 +171,49 @@ var favoriteFoods = ["cheese", "bacon", "ice cream", "pizza"];
 
 // TODO: Refactoring the instructor loop, alert "hey, I know <INSTRUCTOR NAME HERE>" if you have had class with that instructor. If you have not had class with that instructor, alert "I haven't had class with <INSTRUCTOR NAME HERE> yet!"
 
-for (var i = 0; i < instructors.length; i++)    {
-    if (instructors[i] === "vivian" || instructors[i] === "sophie") {
-        console.log("hey, I know " + instructors[i]);
-    } else  {
-        console.log("I haven't had class with " + instructors[i] + " yet!");
-    }
-}
+// for (var i = 0; i < instructors.length; i++)    {
+//     if (instructors[i] === "vivian" || instructors[i] === "sophie") {
+//         console.log("hey, I know " + instructors[i]);
+//     } else  {
+//         console.log("I haven't had class with " + instructors[i] + " yet!");
+//     }
+// }
 
 
 /* ***************************************************************
 * 						FOR EACH ARRAY
 *************************************************************** */
 
+// someArray.forEach(function(element, index, array)    {
+// })
+
 // TODO TOGETHER: Using a for each loop, console.log each shape from the shapes array
 
+// shapes.forEach(function (shape)  {
+//     console.log(shape);
+// })
 
 // TODO TOGETHER: Using a for each loop, console.log each element from the following array:
 var pies = ["apple", "cherry", "key lime", "huckleberry"];
 
+// pies.forEach(function (pie) {
+//     console.log(pie);
+// })
+
 // TODO: Using a for each loop, iterate through the instructors array and console.log each instructor
+
+// instructors.forEach(function (instructor){
+//     console.log(instructor);
+// })
+
 // TODO: Using a for each loop, iterate through the daysOfTheWeek array and console.log each day of the week
+
+// daysOfTheWeek.forEach(function (dayOfTheWeek){
+//     console.log(dayOfTheWeek);
+// })
+
 // TODO: Using a for each loop, iterate through the favoriteFoods array and console.log each favorite food
 
+// favoriteFoods.forEach(function (favoriteFood){
+//     console.log(favoriteFood);
+// })
