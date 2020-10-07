@@ -1,9 +1,10 @@
 "use strict";
 
 
-console.log("Hello from external JavaScript");
+// console.log("Hello from external JavaScript");
 
 // Use the alert function to show a message that says 'Welcome to my Website!'.
+
 // alert("Welcome to my Website!");
 
 /* Use a prompt to ask for the user's favorite color. Use the user's
@@ -11,8 +12,8 @@ response to alert a message that says that the color entered is your
 favorite color too.
 */
 
-var favColor = prompt("What is your favorite color?");
-alert("Great, " + favColor + " is my favorite color too!");
+// var favColor = prompt("What is your favorite color?");
+// alert("Great, " + favColor + " is my favorite color too!");
 
 
 /*
@@ -28,15 +29,15 @@ and Hercules (1 day, you don't know yet if they're going to like it).
 If price for a movie per day is $3, how much will you have to pay?
 */
 
-var mermaid = Number(prompt("For how many days would you like to rent The Little Mermaid?"));
-var bear = Number(prompt("For how many days would you like to rent Brother Bear?"));
-var hercules = Number(prompt("For how many days would you like to rent Hercules?"));
-
-var dailyCost = Number(prompt("How much is the daily rental charge per movie?"));
-
-var totalCost = (mermaid + bear + hercules) * dailyCost;
-
-alert("You owe: $" + totalCost);
+// var mermaid = Number(prompt("For how many days would you like to rent The Little Mermaid?"));
+// var bear = Number(prompt("For how many days would you like to rent Brother Bear?"));
+// var hercules = Number(prompt("For how many days would you like to rent Hercules?"));
+//
+// var dailyCost = Number(prompt("How much is the daily rental charge per movie?"));
+//
+// var totalCost = (mermaid + bear + hercules) * dailyCost;
+//
+// alert("You owe: $" + totalCost);
 
 
 /*
@@ -48,19 +49,19 @@ You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
 */
 
 
-var googlePay = Number(prompt("How much does Google pay you per hour worked?"));
-var googleHours = Number(prompt("How many hours did you work at Google this week?"));
-var googleEarned = googlePay * googleHours;
-var amazonPay = Number(prompt("How much does Amazon pay you per hour worked?"));
-var amazonHours = Number(prompt("How many hours did you work at Amazon this week?"));
-var amazonEarned = amazonPay * amazonHours;
-var fbPay = Number(prompt("How much does Facebook pay you per hour worked?"));
-var fbHours = Number(prompt("How many hours did you work at Facebook this week?"));
-var fbEarned = fbPay * fbHours;
-
-var paycheck = googleEarned + amazonEarned + fbEarned;
-
-alert("You paychecks this week will total: $" + paycheck);
+// var googlePay = Number(prompt("How much does Google pay you per hour worked?"));
+// var googleHours = Number(prompt("How many hours did you work at Google this week?"));
+// var googleEarned = googlePay * googleHours;
+// var amazonPay = Number(prompt("How much does Amazon pay you per hour worked?"));
+// var amazonHours = Number(prompt("How many hours did you work at Amazon this week?"));
+// var amazonEarned = amazonPay * amazonHours;
+// var fbPay = Number(prompt("How much does Facebook pay you per hour worked?"));
+// var fbHours = Number(prompt("How many hours did you work at Facebook this week?"));
+// var fbEarned = fbPay * fbHours;
+//
+// var paycheck = googleEarned + amazonEarned + fbEarned;
+//
+// alert("You paychecks this week will total: $" + paycheck);
 
 
 /*
@@ -72,16 +73,16 @@ and the class schedule does not conflict with her current schedule.
 
 // Answered using confirms
 
-var canEnroll;
-var fullConfirm = confirm("Is the class full? \(OK if yes, cancel if no\)");
-var conflictConfirm = confirm("Does this class conflict with the student's current schedule? \(OK if yes, cancel if no\)");
+// var canEnroll;
+// var fullConfirm = confirm("Is the class full? \(OK if yes, cancel if no\)");
+// var conflictConfirm = confirm("Does this class conflict with the student's current schedule? \(OK if yes, cancel if no\)");
 
 
-if (!fullConfirm && !conflictConfirm) {
-    canEnroll = alert("The student is eligible to enroll in this class");
-}	else	{
-    canEnroll = alert("The student is not eligible to enroll in this class");
-}
+// if (!fullConfirm && !conflictConfirm) {
+//     canEnroll = alert("The student is eligible to enroll in this class");
+// }	else	{
+//     canEnroll = alert("The student is not eligible to enroll in this class");
+// }
 
 
 
@@ -124,17 +125,17 @@ alert("The student is " + canEnroll + "eligible to enroll in this class.")
 
 // Completed using confirm and prompts
 
-var isPremium = confirm("Welcome!  Are you a premium member? \(OK if yes, cancel if no\)");
-var numItem = Number(prompt("How many items are you purchasing?"));
-var isExp = confirm("Has this offer already expired? \(OK if yes, cancel if no\)");
+// var isPremium = confirm("Welcome!  Are you a premium member? \(OK if yes, cancel if no\)");
+// var numItem = Number(prompt("How many items are you purchasing?"));
+// var isExp = confirm("Has this offer already expired? \(OK if yes, cancel if no\)");
 
 
 
-if (isPremium && !isExp || !isPremium && !isExp && numItem > 2)	{
-    alert("Offer can be applied");
-}	else	{
-    alert("Offer cannot be applied");
-}
+// if (isPremium && !isExp || !isPremium && !isExp && numItem > 2)	{
+//     alert("Offer can be applied");
+// }	else	{
+//     alert("Offer cannot be applied");
+// }
 
 
 //  Completed without condition statements
