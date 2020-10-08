@@ -90,6 +90,52 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+    var books = [
+        {
+            title: "Such a Fun Age",
+            author: {
+                firstName: "Kiley",
+                lastName: "Reid"
+            },
+        },
+
+        {
+            title: "Big Summer",
+            author: {
+                firstName: "Jennifer",
+                lastName: "Weiner"
+            },
+        },
+
+        {
+            title: "Perfect Tunes",
+            author: {
+                firstName: "Emily",
+                lastName: "Gould"
+            },
+        },
+
+        {
+            title: "Long Bright River",
+            author: {
+                firstName: "Liz",
+                lastName: "Moore"
+            },
+        },
+
+        {
+            title: "Weather",
+            author: {
+                firstName: "Jenny",
+                lastName: "Offill"
+            },
+        },
+    ];
+
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
