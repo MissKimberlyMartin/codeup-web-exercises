@@ -144,6 +144,7 @@
      * - the book title
      * - author's full name (first name + last name)
      *
+     *
      * Example Console Output:
      *
      *      Book # 1
@@ -160,6 +161,14 @@
      *      ---
      *      ...
      */
+
+    books.forEach(function (book){
+        console.log("Book # " + (parseInt(books.indexOf(book)) + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+        console.log("---");
+    });
+
 
     /**
      * Bonus:
