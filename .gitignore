@@ -1,5 +1,5 @@
 .idea/*
 *.iml
 .DS_STORE
-.practice-classwork/*
-.practice-misc-files/*
+/practice-classwork/*
+/practice-misc-files/*
