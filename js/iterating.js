@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    var names = ["Max", "Trixie", "Darwin", "Philip"];
+    var names = ["Titus", "Trixie", "Max", "Darwin"];
 
     /**
      * TODO:
@@ -64,23 +64,21 @@
 
 
 
-    function first(array)   {
-        return array[0];
-    }
-
-    function second(array)  {
-        return array[1];
-    }
-
-    function last(array)    {
-        return array[array.length - 1]
-    }
-
-    console.log(first([1, 2, 3, 4, 5])) // returns 1
-    console.log(second([1, 2, 3, 4, 5]))// returns 2
-    console.log(last([1, 2, 3, 4, 5])) // return 5
+    // function first(array)   {
+    //     return array[0];
+    // }
+    //
+    // function second(array)  {
+    //     return array[1];
+    // }
+    //
+    // function last(array)    {
+    //     return array[array.length - 1]
+    // }
+    //
+    // console.log(first([1, 2, 3, 4, 5])) // returns 1
+    // console.log(second([1, 2, 3, 4, 5]))// returns 2
+    // console.log(last([1, 2, 3, 4, 5])) // return 5
 
 })();
-
-// EOD commit 5 OCT
 
