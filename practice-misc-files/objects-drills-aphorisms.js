@@ -259,33 +259,37 @@ var aphorisms = [
 
 //TODO: Assign the first quote/author object to the variable firstQuote. Log the quote from the variable. Log the author from the variable.
 
-var firstQuote = aphorisms[0];
-console.log(firstQuote.quote);
-console.log(firstQuote.author);
+// var firstQuote = aphorisms[0];
+// console.log(firstQuote.quote);
+// console.log(firstQuote.author);
 
 //TODO: Assign the last quote/author object to the variable lastQuote. Log the quote from the variable. Log the author from the variable.
 
-var lastQuote = aphorisms[aphorisms.length - 1];
-console.log(lastQuote.quote);
-console.log(lastQuote.author);
+// var lastQuote = aphorisms[aphorisms.length - 1];
+// console.log(lastQuote.quote);
+// console.log(lastQuote.author);
 
 //TODO: Without using a loop, log the first 5 quotes and their author in the format quote + "-author"
 //Example: "build something 100 people love, not something 1 million people kind of like -Brian Chesky"
 
-console.log(aphorisms[0].quote + " -" + aphorisms[0].author);
-console.log(aphorisms[1].quote + " -" + aphorisms[0].author);
-console.log(aphorisms[2].quote + " -" + aphorisms[0].author);
-console.log(aphorisms[3].quote + " -" + aphorisms[0].author);
-console.log(aphorisms[4].quote + " -" + aphorisms[0].author);
+// console.log(aphorisms[0].quote + " -" + aphorisms[0].author);
+// console.log(aphorisms[1].quote + " -" + aphorisms[0].author);
+// console.log(aphorisms[2].quote + " -" + aphorisms[0].author);
+// console.log(aphorisms[3].quote + " -" + aphorisms[0].author);
+// console.log(aphorisms[4].quote + " -" + aphorisms[0].author);
 
 //TODO: After doing this 'manually' why is a loop more beneficial?
 
 //TODO: Write a function named 'formatQuote' that accepts an aphorism object and returns a string containing the quote and author in the format "quote" + "-author"
 
 function formatQuote(aphorismObject) {
-	return aphorisms.quote + " -" + aphorisms.author;
+	return aphorismObject.quote + " -" + aphorismObject.author;
 }
 
+// console.log(formatQuote({
+// 	quote: "What’s the one thing you can do, such that by doing it, everything else will be easier or unnecessary?",
+// 	author: "Gary Keller"
+// }));
 
 /*
 *Example Input:
@@ -297,6 +301,11 @@ function formatQuote(aphorismObject) {
 **/
 
 //TODO: Write a function named getRandomQuote, that accepts the aphorisms array, and returns a string that contains a random quote and author in the format "quote" + "-author".
+
+function getRandomQuote(aphorismsArray) {
+	var randomQuoteIndex = Math.floor(Math.random() * (aphorismsArray.length - 1));
+	var aphorismObject = aphorismsArray[randomQuoteIndex]
+}
 
 //TODO: Write a function named fiveRandomQuotes, that accepts the aphorisms array and returns an array of five random quotes and authors in the format "quote" + "-author".
 
