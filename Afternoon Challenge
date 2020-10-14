@@ -1,3 +1,6 @@
+<!--This HTML page is using too many divs. Refactor it to use more semantic elements!
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
