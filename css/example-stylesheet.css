@@ -1,0 +1,43 @@
+/*create examples to demo the specificity of the following in the correct order:*/
+
+/*classes*/
+/*elements*/
+/*ids*/
+/*!important*/
+/*order of CSS declarations*/
+/*inline styling*/
+/*selector combinations*/
+
+/*What does the “Cascading” mean in “Cascading Style Sheets”?*/
+
+/*ids*/
+/*When using an element's ID as a selector, it will have a higher specificity than attribute selectors*/
+/**/
+
+
+
+
+/*!important*/
+/*
+!important is used to overrule normal rules of specificity, making a particular property and value the most specific selector
+*/
+
+#favsnack {
+    background-color: pink;
+}
+body {
+    font-family: Arial;
+    background-color: aqua !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
