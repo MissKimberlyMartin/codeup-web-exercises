@@ -1,6 +1,5 @@
 /* selector for id="container" */
 #container {
-    background-color: pink;
     margin: 50px auto;
     width: 500px;
     padding: 10px;
@@ -9,7 +8,7 @@
 /*  selector for all "h1" elements
     that are a descendent of id="container"
     and have a class of "fancy-header" */
-#container h1 {
+#container h1.fancy-header {
     color: blue;
     text-decoration: underline;
 }
@@ -26,6 +25,6 @@ em {
 
 /*  selector for all "anchor" elements
     that are a direct child of an element with class="article" */
-a {
+.article>a {
     float:right;
 }
