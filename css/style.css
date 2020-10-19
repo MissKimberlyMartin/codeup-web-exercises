@@ -1,37 +1,57 @@
-/*
-
-Add a style to change the table, table cells td and rows tr padding and font sizes.
-
-Add a style to alter the anchor tags and its different states. (e.g. link, visited, hover and active).
-
-Continue experimenting with styles to increase the visual appeal of the page.*/
-
 * {
     font-family: 'Krona One', sans-serif;
+    box-sizing: border-box;
+    background-color: #a3c1ad;
 
 }
 
 body {
-    background-color: black;
     background-image: url("../img/greenbinary.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    color: darkgray;
+}
+
+
+h1 {
+    text-align: center;
 }
 
 ul {
     list-style-type: square;
 }
 
-table {
-    width: 50%;
+table{
+    width: 75%;
     margin: auto;
-    border: 2px gray solid;
-    padding: 5px;
+    border: 2px black solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: #49796b;
+    color: black;
+    padding: 15px;
+    border-bottom: 2px black solid;
+    font-size: 1.5em;
 }
 
 #tableheader {
-    margin: auto;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+tr td{
+    background: #d9eee1;
+}
+
+tr:hover td{
+    background: #a0d6b4;
 }
 
 .fancy-header {
@@ -39,3 +59,18 @@ table {
     text-decoration: underline;
 }
 
+a:link {
+    color: mediumblue;
+}
+
+a:visited {
+    color: darkslateblue;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: yellow;
+}

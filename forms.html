@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register With Us</title>
 </head>
 <body>
@@ -18,21 +15,70 @@
         <label for="password">Password:</label>
         <input id="password" name="password" type="password" placeholder="password">
     </div>
-    <div>
-        <input type="submit">
-    </div>
-
+<br>
 <!--textarea-->
     <div>
-        <label for="bio">Tell me a little about yourself</label>
-        <textarea id="bio" name="bio" rows="7" cols="50">Type in a short bio about yourself here.</textarea>
+        <label for="bio">Tell me a little about yourself:</label>
+            <br>
+        <textarea id="bio" name="bio" rows="7" cols="50" placeholder="Type in a short bio about yourself here."></textarea>
     </div>
 
 <!--radio buttons-->
-    <div>
-        <label>
-            <input type=""
+<!--  Create a "How did you hear about us" section that contains radio buttons. The values should be "billboard", "radio advertisement", "internet advertisement", and "other". Only one of the values should be allowed to be selected at a time.  -->
+    <div id="from-where">
+        <h3>How did you hear about us?</h3>
+
+        <label for="billboard">
+            <input type="radio" name="from-options" value="billboard">
+                Billboard
         </label>
+        <br>
+        <label for="radio-ad">
+            <input type="radio" name="from-options" value="radio advertisement">
+                Radio Advertisement
+        </label>
+        <br>
+        <label for="internet-ad">
+            <input type="radio" name="from-options" value="internet advertisement">
+                Internet Advertisement
+        </label>
+        <br>
+        <label for="other">
+            <input type="radio" name="from-options" value="other">
+                Other
+        </label>
+    </div>
+
+    <div>
+<!--  dropdown Which web browser are you using?     -->
+        <h3>Which web browser are you using?</h3>
+<!--   Chrome, Edge, Firefox, Opera, Safari, Other     -->
+        <select name="web-browser" style="width: 200px;padding: 10px;">
+
+            <option value="no browser selected">
+                Select browser
+            </option>
+            <option value="chrome">
+                Chrome
+            </option>
+            <option value="edge">
+                Edge
+            </option>
+            <option value="firefox">
+                FireFox
+            </option>
+            <option value="safari">
+                Safari
+            </option>
+            <option value="other">
+                Other
+            </option>
+        </select>
+    </div>
+
+    <br><br>
+    <div>
+        <input type="submit">
     </div>
 </form>
 
