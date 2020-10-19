@@ -6,6 +6,10 @@ Add a style to alter the anchor tags and its different states. (e.g. link, visit
 
 Continue experimenting with styles to increase the visual appeal of the page.*/
 
+* {
+    font-family: 'Krona One', sans-serif;
+
+}
 
 body {
     background-color: black;
@@ -13,13 +17,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: darkgray;
-    font-family: 'Krona One', sans-serif;
 }
 
 ul {
     list-style-type: square;
 }
 
+table {
+    width: 50%;
+    margin: auto;
+    border: 2px gray solid;
+    padding: 5px;
+}
+
+#tableheader {
+    margin: auto;
+}
 
 .fancy-header {
     color: purple;
