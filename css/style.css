@@ -1,7 +1,4 @@
 /*
-Add a style to change the list-style to something other than the default bullet.
-
-Add a style to change the font for the entire page. Use google fonts if you would like.
 
 Add a style to change the table, table cells td and rows tr padding and font sizes.
 
@@ -10,27 +7,22 @@ Add a style to alter the anchor tags and its different states. (e.g. link, visit
 Continue experimenting with styles to increase the visual appeal of the page.*/
 
 
-
-h1  {
-    text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: forestgreen;
-    text-decoration: underline;
-}
-
 body {
     background-color: black;
     background-image: url("../img/greenbinary.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    color: darkgray;
+    font-family: 'Krona One', sans-serif;
 }
 
-
+ul {
+    list-style-type: square;
+}
 
 
 .fancy-header {
     color: purple;
     text-decoration: underline;
 }
+
