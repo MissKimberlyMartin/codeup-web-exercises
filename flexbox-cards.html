@@ -1,87 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.6">
-
-  <style type="text/css">
-    body {background-color: #a6ce44}
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 50.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none; background-color: rgba(255, 255, 255, 0.2); text-shadow: 3.0px 3.0px 0.0px rgba(229, 229, 229, 0.1)}
-    span.s2 {font-kerning: none; background-color: rgba(255, 255, 255, 0.2)}
-    span.s3 {background-color: rgba(255, 255, 255, 0.2); -webkit-text-stroke: 0px #000000}
-    span.s4 {font-kerning: none; background-color: #716064}
-    span.s5 {font-kerning: none; color: #000000; background-color: rgba(255, 255, 255, 0.2); -webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: none}
-  </style>
-
-  <link rel="stylesheet" href="css/flexbox-cards.css">
+  <meta charset="UTF-8">
+  <title>Flexbox cards</title>
+  <!-- TODO: You have a better structure in local your folder, move the following file and change the link path so it's being saved in the css folder -->
+  <link rel="stylesheet" href="flexbox-cards.css">
 </head>
-
 <body>
-
-  <section class="container">
-    <div class="card">
-      <div class="card-title">
-        <h2 style="margin: 0.0px 0.0px 14.9px 0.0px; text-align: center; font: 18.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>BASIC PLAN</b></span></h2>
-      </div>
-      <div class="card-body">
-        <p class="p2"><span class="s2">Excellent for freelance developers</span></p>
-
-        <ul class="ul1">
-          <li class="li3"><span class="s3"></span><span class="s2">Unlimited open source repositories</span></li>
-          <li class="li3"><span class="s3"></span><span class="s2">3 free private repositories</span></li>
-          <li class="li3"><span class="s3"></span><span class="s2">No support for project planning tools</span></li>
-        </ul>
-
-        <p class="p4"><span class="s2">Free</span></p>
-        <p class="p5"><span class="s4">Really?</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-      </div>
+<div class="container">
+  <div class="card">
+    <div class="card-title">
+      <h2>Basic plan</h2>
     </div>
-
-    <div class="card">
-      <div class="card-title">
-        <h2 style="margin: 0.0px 0.0px 14.9px 0.0px; text-align: center; font: 18.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>ENTERPRISE PLAN</b></span></h2>
-      </div>
-      <div class="card-body">
-        <p class="p2"><span class="s2">Excellent for big companies</span></p>
-
-        <ul class="ul1">
-          <li class="li3"><span class="s3"></span><span class="s2">Unlimited open source repositories</span></li>
-          <li class="li3"><span class="s3"></span><span class="s2">8 free private repositories</span></li>
-          <li class="li3"><span class="s3"></span><span class="s2">Support for project planning tools</span></li>
-          <li class="li3"><span class="s3"></span><span class="s2">No limit on the size of a team!</span></li>
-        </ul>
-
-        <p class="p4"><span class="s2">$40.00</span></p>
-        <p class="p5"><span class="s4">Best deal!</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-title">
-        <h2 style="margin: 0.0px 0.0px 14.9px 0.0px; text-align: center; font: 18.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>STARTUP PLAN</b></span></h2>
-      </div>
-      <div class="card-body">
-      <p class="p2"><span class="s2">Excellent for companies with small teams</span></p>
-
-      <ul class="ul1">
-        <li class="li3"><span class="s3"></span><span class="s2">6 free private repositories</span></li>
-        <li class="li3"><span class="s3"></span><span class="s2">Support for project planning tools</span></li>
-        <li class="li3"><span class="s3"></span><span class="s2">Teams up to 6 developers</span></li>
+    <div class="card-body">
+      <p>Excellent for freelance developers</p>
+      <ul class="feature-list">
+        <li class="feature-item">Unlimited open source repositories</li>
+        <li class="feature-item">3 free private repositories</li>
+        <li class="feature-item">No support for project planning tools</li>
       </ul>
-
-      <p class="p4"><span class="s2">$20.00</span></p>
-      <p class="p5"><span class="s4">Awesome!</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-      </div>
+      <p class="price">Free</p>
     </div>
-
-  </section>
+    <div class="card-footer">
+      <a href="#" class="btn-primary">Really?</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">
+      <h2>Enterprise plan</h2>
+    </div>
+    <div class="card-body">
+      <p>Excellent for big companies</p>
+      <ul class="feature-list">
+        <li class="feature-item">Unlimited open source repositories</li>
+        <li class="feature-item">8 free private repositories</li>
+        <li class="feature-item">Support for project planning tools</li>
+        <li class="feature-item">No limit on the size of a team!</li>
+      </ul>
+      <p class="price">$40.00</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-primary">Best deal!</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">
+      <h2>Startup plan</h2>
+    </div>
+    <div class="card-body">
+      <p>Excellent for companies with small teams</p>
+      <ul class="feature-list">
+        <li class="feature-item">6   free private repositories</li>
+        <li class="feature-item">Support for project planning tools</li>
+        <li class="feature-item">Teams up to 6 developers</li>
+      </ul>
+      <p class="price">$20.00</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-primary">Awesome!</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
